@@ -38,3 +38,9 @@ Copiar
    ```bash
    cd unlocked-prices/backend
    ./mvnw spring-boot:run
+3. Frontend:
+   cd unlocked-prices/frontend
+   npm install
+   ng serve
+
+
