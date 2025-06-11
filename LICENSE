@@ -8,3 +8,27 @@ of this software and associated documentation files (the "Software"), to deal
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+
+---
+
+## 4. `sql/script.sql`
+
+1. **Add file → Create new file**  
+2. Nómbralo **`sql/script.sql`**  
+3. Pega tu DDL y **Commit**, por ejemplo:
+
+```sql
+-- Script de creación de tablas principales
+
+CREATE TABLE usuarios (
+  id_usuario SERIAL PRIMARY KEY,
+  email VARCHAR(100) UNIQUE NOT NULL,
+  nombre VARCHAR(100) NOT NULL,
+  clave VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE productos (
+  id_producto SERIAL PRIMARY KEY,
+  nombre VARCHAR(100) NOT NULL
+);
